@@ -42,14 +42,14 @@ export default function Chat() {
       <form onSubmit={handleFormSubmit}>
         {/* Input for image URL */}
         <input
-          className="w-full p-2 mb-4 border border-gray-300 rounded shadow-xl"
+          className="w-full p-2 mb-4 border border-gray-300 rounded"
           value={imageUrl}
           placeholder="Enter image URL here..."
           onChange={handleImageUrlChange}
         />
         {/* Input for chat */}
         <input
-          className="w-full p-2 mb-2 border border-gray-300 rounded shadow-xl"
+          className="w-full p-2 mb-2 border border-gray-300 rounded "
           value={input}
           placeholder="What does the image show..."
           onChange={handleInputChange}
@@ -57,7 +57,7 @@ export default function Chat() {
         {/* Submit button */}
         <button
           type="submit"
-          className="w-full p-2 mb-8 bg-blue-500 text-white rounded shadow-xl"
+          className="w-full p-2 mb-8 bg-blue-500 text-white rounded "
           disabled={!input.trim() || !imageUrl.trim()} // Disable if either field is empty
         >
           Submit
